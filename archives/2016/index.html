@@ -276,6 +276,19 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
 
 </script>
 
+  <script>
+if(isTriggerAnalytics) {
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?ouchyangbaidu";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
+</script>
+
+
 
 
 
@@ -324,7 +337,7 @@ var turnoffBackgroundImage = false;
 
 
 
-var backgroundColor = "D7CCC8";
+var backgroundColor = "95CAE4";
 
 $(".fancybox-thumb").fancybox({
   prevEffect: 'none',
