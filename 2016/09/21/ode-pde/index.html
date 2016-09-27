@@ -1,7 +1,5 @@
 
 
-  
-
 
 
 
@@ -18,9 +16,9 @@
   
   
   
-    <meta name="description" content="清华 杨浩 博客 流体力学 长春 北京">
+    <meta name="description" content="ODEs involve one or more functions of a single variable, with all derivatives ordinary ones relative to that variable. PDEs allow functions of several variables and partial derivatives of the unkno...">
   
-  <title>归档 [ 木易三告 ]</title>
+  <title>ODE方程与PDE方程 [ 木易三告 ]</title>
   
   
     <link rel="shortcut icon" href="http://odu19sy0q.bkt.clouddn.com/cute-blue-monsters-university-icon008.ico">
@@ -39,6 +37,24 @@
 <body>
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="side-navigate hide-area">
   
+    <div class="item prev">
+      <a href="/2016/09/21/ouchyang/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        ouchyang
+      </div>
+    </div>
+  
+  
+    <div class="item next">
+      <a href="/2016/09/14/hello-world/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Hello World
+      </div>
+    </div>
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -64,7 +80,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/archives">文章</a>
             
@@ -103,123 +119,59 @@
     <div id="content-inner">
       
       
-  <article>
-    
-
-  <div id="recent-posts">
-    <h1>归档
-    
-      <span class="posts-count">
-      共
-      3
+  <article id="post">
+    <h1>ODE方程与PDE方程</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 9月 21 2016</span>
       
-        文章
-      
-      </span>
-    
-    </h1>
-    
-    
-      
-      
-        
-      
-      
-    
+        <span id = "post-title-updated">修改于 9月 27 2016</span>
       
       
       
+    </p>
     
-      
-      
-      
-    
-    
-    
-      
-      
-        
-        <h3 class="archive-year-title">2016
-        
-          <span class="posts-count">
-          共
-          3
-          
-            文章
-          
-          </span>
-        
-        </h3>
-      
-      <div class="post-title-item">
-  
-  <a href="/2016/09/21/ouchyang/">
-  
-    ouchyang
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">9-21</span>
-    
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-    
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2016/09/21/ode-pde/">
-  
-    ODE方程与PDE方程
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">9-21</span>
-    
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-    
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2016/09/14/hello-world/">
-  
-    Hello World
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">9-14</span>
-    
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-    
-  </div>
-
+    <p>ODEs involve one or more functions of a single variable, with all derivatives ordinary ones relative to that variable. PDEs allow functions of several variables and partial derivatives of the unknown functions with respect to those variables.</p>
+<p>Here’s an ODE:</p>
+<p>$$m \frac{d^2 x}{d t^2} + k x=0$$</p>
+<p>Here  $x$  is an unknown function of  $t$  and  $m$,$k$  are constants. That’s a second-order, linear, ordinary differential equation. </p>
+<p>Another example is the following system of equations in the unknown functions  $y,z$  of the variable  $x$ .</p>
+<p>$$y’’’+(y z’)^2 - 12 x=0$$<br>$$z’’ + 7 y’’x^5 = \cos x$$</p>
+<p>Here  $u$  is an unknown function of 3 variables  $x,y,t$  describing the temperature on a two-dimensional surface as a function of time. The equation governs how heat dissipates and redistributes itself over time along the surface. </p>
+<p>To your second question, “Is there a way to visualise these differential equations?”, the answer is that there are many ways to visualize various ODEs and PDEs but none that I can point out in that generality. What are “these” in this sentence? Pretty much all differential equations are either ODEs and PDEs so this is like asking “is there a way to visualize all differential equations”.</p>
+<p>Here’s another way to think of it. An ODE describes a particle moving through time (you can graph it on two axes: space and time). Even if you have a finite system of N equations, that can be thought of as N particles in 1-dimensional space or alternatively, just 1 particle in N-dimensional space. This is why the “initial condition” is just one point.</p>
+<p>On the other hand, a PDE describes a surface changing over time. In 1 space dimension and 1 time dimension, this would just be a curve changing over time. To visualize it physically, think of the oscillation of a guitar string that’s just been plucked (wave equation). In this case,  $u(t,x)$  is the displacement of the string at time  $t$  and position on the string  $x$ . Whereas the solution to an ODE is a finite-dimensional vector, the solution to a PDE is a function. This is why the “initial conditions” for PDE are functions defined at all space positions at time 0.</p>
+<p>A diff eqn is an eqn contaning derivatives of a dependent variable wrt one and more independent variable<br>then it has two types<br>1) ODE (Ordinary diff eqn)<br>             This type of diff eqn contaning single independent variable<br>i.e the derivative occcures in an eqn are ordinary<br>2) PDE (Partial diff eqn)<br>                 This type of diff eqn contaning two or more independent variable<br>i.e the derivative occcures in an eqn are partial</p>
 
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    
+  </div>
+</div>
 
+  
+<nav id="pagination">
+  
+    <a href="/2016/09/21/ouchyang/" class="prev">&larr; 上一篇 ouchyang</a>
+  
+
+  
+
+  
+    <a href="/2016/09/14/hello-world/" class="next">下一篇 Hello World &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+      
+      <div class="ds-thread" data-thread-key="2016/09/21/ode-pde/" data-title="ODE方程与PDE方程" data-url="http://yoursite.com/2016/09/21/ode-pde/"></div>
       
       
       
@@ -237,6 +189,18 @@
 </div>
 
 </div>
+
+  <script type="text/javascript">
+var duoshuoQuery = {short_name:"ouchyang"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0] 
+   || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
 
 
 
@@ -359,6 +323,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
+
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "95CAE4";
