@@ -247,7 +247,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2018/01/17/hello-world/" data-id="cjciq1ch60000fsb9o167857h" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/01/17/hello-world/" data-id="cjciq25990000hib9mkusn1pt" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -382,7 +382,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2016/09/21/ode-pde/" data-id="cjciq1chb0002fsb9r3fi61mz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2016/09/21/ode-pde/" data-id="cjciq259e0002hib9u1r39ob7" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -503,7 +503,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2016/09/21/ouchyang/" data-id="cjciq1che0004fsb9wmfbsr07" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2016/09/21/ouchyang/" data-id="cjciq259h0004hib9k7o78d6o" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -703,7 +703,22 @@
 <!-- Custom Scripts -->
 <script src="/js/main.js"></script>
 
-    </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+    </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
